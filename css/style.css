@@ -9,7 +9,45 @@
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+ body {
+   font-family: "Roboto";
+   color: #333;
+ }
 
+ .text {
+   width: 100%;
+   text-align: center;
+   height: 50px;
+   line-height: 50px;
+   font-size: 30px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+ }
+ .text .content {
+   display: inline;
+ }
+ .text .dash {
+   display: inline-block;
+   height: 3px;
+   width: 20px;
+   background-color: #3498db;
+   animation: blink 0.5s infinite linear;
+ }
+
+ @keyframes blink {
+   0% {
+     opacity: 1;
+   }
+   99% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
@@ -237,6 +275,7 @@ button {
 }
 
 .navbar {
+    position: relative;
     padding: 0px 20px 15px 20px;
 }
 
@@ -250,7 +289,20 @@ button {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #f3801f;
+    color: #666666;
+}
+
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #fff;
+  border: 2px solid #000;
+  border: 50%;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 15px;
 }
 
 .login_menu {
@@ -288,7 +340,7 @@ button {
     position: absolute;
     left: 62px;
     top: 75%;
-    background: #f3801f;
+    background: #666666;
     color: #fff;
 }
 
@@ -315,7 +367,7 @@ button {
 #main_slider .carousel-control-next:hover,
 #main_slider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
-    background: #f3801f;
+    background: #666666;
     color: #ffffff;
 }
 
@@ -390,7 +442,7 @@ i.fa.fa-angle-left {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #f3801f;
+    background-color: #666666;
     text-align: center;
     padding: 12px 0px;
 }
@@ -409,7 +461,7 @@ i.fa.fa-angle-left {
     position: absolute;
     left: 37px;
     top: 40%;
-    background: #f3801f;
+    background: #666666;
     color: #fff;
 }
 
@@ -436,7 +488,7 @@ i.fa.fa-angle-left {
 #my_main_slider .carousel-control-next:hover,
 #my_main_slider .carousel-control-prev:focus,
 #my_main_slider .carousel-control-next:focus {
-    background: #f3801f;
+    background: #666666;
     color: #ffffff;
 }
 
@@ -574,7 +626,7 @@ i.fa.fa-angle-left {
 .border_10 {
     width: 5px;
     float: left;
-    background-color: #f3801f;
+    background-color: #666666;
     height: 100px;
 }
 
@@ -598,7 +650,7 @@ i.fa.fa-angle-left {
 }
 
 .box_main:hover {
-    background-color: #f3801f;
+    background-color: #666666;
 }
 
 .box_main:hover .border_10 {
@@ -606,7 +658,7 @@ i.fa.fa-angle-left {
 }
 
 .box_main.active {
-    background-color: #f3801f;
+    background-color: #666666;
 }
 
 .box_main.active .border_10 {
@@ -633,7 +685,7 @@ i.fa.fa-angle-left {
 
 .see_bt a:hover {
     color: #ffffff;
-    background-color: #f3801f;
+    background-color: #666666;
 }
 
 .choose_section {
@@ -768,7 +820,7 @@ i.fa.fa-angle-left {
     left: -200px;
     top: 43%;
     background-color: #f1f1f1;
-    color: #f3801f;
+    color: #666666;
 }
 
 #my_slider .carousel-control-prev,
@@ -787,7 +839,7 @@ i.fa.fa-angle-left {
 #my_slider .carousel-control-prev:focus,
 #my_slider .carousel-control-next:focus {
     background: #f1f1f1;
-    color: #f3801f;
+    color: #666666;
 }
 
 .fa {
@@ -976,7 +1028,7 @@ i.fa.fa-angle-left {
 #custum_slider .carousel-control-next:hover,
 #custum_slider .carousel-control-prev:focus,
 #custum_slider .carousel-control-next:focus {
-    background: #f3801f;
+    background: #666666;
     color: #ffffff;
 }
 
